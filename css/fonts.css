@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'origin';
+    src: url(fonts/OriginTech\ personal\ use.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'garamond';
+    src: url(fonts/EBGaramond-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
