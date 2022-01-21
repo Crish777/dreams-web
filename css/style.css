@@ -220,7 +220,7 @@ main{
 	transition: all .5s ease-in-out;
 	position: relative;
 	display: inline-block;
-	margin-right: 100px;
+	margin-right: 50%;
 }
 
 .itemMenu:before{
