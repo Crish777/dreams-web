@@ -1,5 +1,19 @@
 export default {
     projects: [
+         {
+            resumeImg: "../img/pc.png",
+            heroImg: "img/pc.png",
+            projectName: "Mental Cage",
+            projectDescription: "Gimnasio, para entrenar y volverse musculoso etc.......",
+            phoneInterface: [
+                "../img/cargar.png",
+                "../img/resultado.png",
+                "../img/detalle.png"
+            ],
+            webPrototype: "../img/pc.png",
+            webVideoPrototype: "../img/video/website.mp4",
+            designAndDev: "../img/paginaCompleta.png"
+        },
         {
             resumeImg: "../img/heroImg.png",
             heroImg: "img/heroImg.png",
