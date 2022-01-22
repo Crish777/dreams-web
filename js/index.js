@@ -13,6 +13,12 @@ const router = () => {
     const actualPage = document.querySelector('.actualPage');
     const totalPages = document.querySelector('.totalPages');
     const contHeader = document.querySelector('.contHeader');
+    const toggleDark = document.querySelector('.toggleDark');
+    let darkMode = localStorage.getItem('darkmode');
+
+    console.log(darkMode);
+    console.log(localStorage);
+    
 
     totalPages.innerHTML = data.projects.length
 
@@ -235,10 +241,38 @@ const router = () => {
             }
         }
 
+        if(e.target.classList.contains('toggleDark')){
+            darkMode = localStorage.getItem('darkMode');
+            console.log(darkMode);
+            console.log(darkMode === null);
+            if(darkMode !== "enabled"){
+                enableDarkMode();
+                console.log("Enable");
+            }else{
+                disableDarkMode();
+                console.log("Disable");
+            }
+        }
+
     });
 
-    
 
+    const enableDarkMode = () => {
+        document.body.classList.add("darkMode");
+        localStorage.setItem("darkMode", "enabled");
+        // console.log(darkMode);
+    }
+
+    const disableDarkMode = () => {
+        document.body.classList.remove("darkMode");
+        localStorage.setItem("darkMode", null);
+        // console.log(darkMode);
+    }
+    
+    if(darkMode !== "enabled"){
+        console.log("Empezando");
+        enableDarkMode();
+    }
 
     
 
