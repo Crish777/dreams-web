@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: 'garamond';
+	transition: all .5s ease-in-out;
 	overflow-x: hidden;
 }
 body.scroll {
@@ -47,6 +48,10 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
 	background-color: #58c3e8;
 	border-radius: 15px;
+}
+
+body.darkMode{
+	background-color: #222;
 }
 
 
@@ -73,6 +78,11 @@ table {
 	color: #58c3e8;
 	font-size: 40px;
 	text-shadow: 13px 10px 10px rgba(0,0,0,.3);
+	transition: all .5s ease-in-out;
+}
+
+.darkMode .title{
+	text-shadow: 13px 10px 10px rgba(204, 204, 204, 0.253);
 }
 
 .uppercase{
@@ -177,6 +187,10 @@ main{
 	display: none;
 }
 
+.darkMode .siteNav{
+	background: linear-gradient(180deg, #222 0%, #222 25%, #222 100%);
+}
+
 .siteNav.open{
 	display: block;
 }
@@ -201,6 +215,10 @@ main{
 	height: 100%;
 	background: transparent;
 	background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(9,9,121,0) 25%, rgba(255,255,255,0.9990371148459384) 100%);
+}
+
+.darkMode .bannerMenu{
+	background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(34, 34, 34, 0.479) 50%, #222 100%);
 }
 
 .ulSitePages{
@@ -391,6 +409,11 @@ main{
 .projectDescription{
 	font-weight: 900;
 	font-size: 30px;
+	transition: all .5s ease-in-out;
+}
+
+.darkMode .projectDescription{
+	color: #ccc;
 }
 
 .multimediaCont{
@@ -410,6 +433,11 @@ main{
 	padding: 60px;
 	background-color: #f1f1f17a;
 	margin-bottom: 40px;
+	transition: all .5s ease-in-out;
+}
+
+.darkMode .imgPhoneInterface{
+	background-color: #4040407a
 }
 
 .phoneWeb{
@@ -439,6 +467,11 @@ main{
 	overflow: hidden;
 	border-radius: 50px;
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.5);
+	transition: all .5s ease-in-out;
+}
+
+.darkMode .videoInterfaceWeb{
+	box-shadow: 0px 0px 30px rgba(199, 199, 199, 0.5);
 }
 
 #videoWeb{
@@ -452,6 +485,11 @@ main{
 .screenShotWeb{
 	width: 100%;
 	box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.5);
+	transition: all .5s ease-in-out;
+}
+
+.darkMode .screenShotWeb{
+	box-shadow: 0px 0px 30px rgba(199, 199, 199, 0.5);
 }
 
 
@@ -460,9 +498,14 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 30px 20px;
+	padding: 35px 20px;
 	background-color: rgb(235, 235, 235);
 	position: relative;
+	z-index: 1;
+}
+
+.darkMode #siteFooter{
+	background-color: rgb(19, 19, 19);
 }
 
 .paginationFooter{
@@ -498,8 +541,50 @@ main{
 	text-align: right;
 }
 
+.darkMode .copyText{
+	color: #ccc;
+}
+
 .designAndDev{
 	margin-bottom: 0px;
+}
+
+.settingsSite{
+	position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100vh;
+    border-left: 1px solid #999;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+
+.settingsBtn{
+	min-height: 50px;
+	min-width: 50px;
+	background-image: url(../img/icons/Mundo\ cargar\ 1.svg);
+	cursor: pointer;
+	overflow: hidden;
+	padding-bottom: 35px;
+	position: relative;
+	background-position: 0 100%;
+	margin-bottom: 25px;
+}
+
+.toggleDark{
+	height: 40px;
+	width: 40px;
+	margin-left: 5px;
+	background-color: rgb(27, 27, 27);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+}
+
+.darkMode .toggleDark{
+	background-color: #ccc;
 }
 
 @media only screen and (max-width: 1024px){
