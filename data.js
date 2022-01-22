@@ -3,7 +3,7 @@ export default {
         {
             resumeImg: "../img/heroImg.png",
             heroImg: "img/heroImg.png",
-            projectName: "Juf Prueba",
+            projectName: "Juf",
             projectDescription: "Es una tienda de accesorios para dama y caballero, cuenta con una gran variedad de productos de excelente calidad y muy buena atención. Visítalos no te vas a arrepentir",
             phoneInterface: [
                 "../img/cargar.png",
