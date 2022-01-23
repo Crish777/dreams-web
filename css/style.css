@@ -632,6 +632,11 @@ main{
 
 @media only screen and (max-width: 768px){
 	
+	.projectDescription{
+		font-weight: normal;
+		font-size: 22px;
+	}
+	
 	.settingsSite{
 		width: auto;
 		height: auto;
