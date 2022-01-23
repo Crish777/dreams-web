@@ -630,6 +630,14 @@ main{
 }
 
 @media only screen and (max-width: 768px){
+	
+	.settingsSite{
+		width: auto;
+		height: auto;
+		top: initial;
+		bottom: -10px;
+		border: none;
+	}
 
 	.outerBanner {
 		position: absolute;
