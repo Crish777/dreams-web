@@ -243,6 +243,7 @@ main{
 }
 
 .itemMenu:before{
+	display: none;
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -556,7 +557,6 @@ main{
     right: 0;
     width: 60px;
     height: 100vh;
-    border-left: 1px solid #999;
 	display: flex;
 	justify-content: center;
 	align-items: end;
